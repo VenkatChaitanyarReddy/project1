@@ -16,7 +16,11 @@
 
 }
 
-.logo,a{
+.img-logo{
+  margin-left: 100px;
+}
+
+.logo{
     margin: auto 5px;
     text-decoration: none;
     color: white;
@@ -88,22 +92,50 @@
   margin: 30px 120px;
 }
 
+.categories-title{
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.categories-title::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 95px;
+  height: 4px;  
+  background-color: orangered;
+}
+
 .post-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
-  margin: 10px 0;
-  justify-content: center;
+  margin: 10px 10px;
+  background-color: white;
 }
 
 .post-card {
   background-color: white;
-  width: 320px;
+  width: 16vw;
   width: calc((100% - 80px) / 5);
   padding: 5px;
   text-align: center;
   border-radius: 5px;
   position: relative;
+  border: 1.5PX solid whitesmoke;
+}
+
+.post-card:hover{
+
+  transition: all 2s;
+  scale: 0.7;
+
 }
 
 .post-card img {
@@ -116,11 +148,11 @@
 
 .post-card span {
   position: absolute;
-  top: 19px;
-  right: 10px;
+  top: 15px;
+  right: 6px;
   background-color: rgba(239, 84, 6, 0.85);
   color: rgb(241, 240, 239);
-  padding: 6px 12px;
+  padding: 5px 10px;
   font-size: 14px;
   border-radius: 6px;
 }
