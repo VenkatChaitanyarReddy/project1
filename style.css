@@ -81,3 +81,48 @@
 }
 
 /* Container1 Ends */
+
+/* Categories starts */
+
+.Categories {
+  margin: 30px 120px;
+}
+
+.post-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 10px 0;
+  justify-content: center;
+}
+
+.post-card {
+  background-color: white;
+  width: 320px;
+  width: calc((100% - 80px) / 5);
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  position: relative;
+}
+
+.post-card img {
+  height: 180px;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 5px solid white;
+}
+
+.post-card span {
+  position: absolute;
+  top: 19px;
+  right: 10px;
+  background-color: rgba(239, 84, 6, 0.85);
+  color: rgb(241, 240, 239);
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+/* Categories Ends */
