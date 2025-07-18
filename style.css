@@ -164,9 +164,8 @@
 /* vegetarian css */
 
 .information{
-  width: 1200px;
   height: 280px;
-  margin: 20px auto;
+  margin: 20px 60px;
   border: 1px solid orangered;
   border-radius: 1px;
   background-color: whitesmoke;
@@ -190,7 +189,8 @@
 }
 
 .meals{
-  margin: 30px 100px;
+  margin: 50px 60px;
+  margin-right: 10px;
 }
 
 .meals-title{
@@ -200,10 +200,18 @@
   padding-bottom: 5px;
 }
 
+.meals-title::after{
+  content: '';
+  position: absolute;
+  width: 83px;
+  height: 4px;  
+  background-color: orangered;
+}
+
 .meal-cards{
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
   margin: 10px 10px;
   background-color: white;
 }
