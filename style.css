@@ -2,7 +2,9 @@
     margin: 0px;
     border: 0px;
 }
-
+.body{
+  background-color: whitesmoke;
+}
 
 /* Navbar Starts */
 .nav{
@@ -232,4 +234,144 @@
   border: 5px solid white;
 }
 
+.bain-anchor{
+  text-decoration: none;
+  color: black;
+}
+
 /* vegetarian css Ends */
+
+/* Baingan css Starts */
+
+.sec-nav{
+    margin: 40px auto;
+    background:rgb(226, 85, 34);
+    width: 1400px;
+    height: 8vh;;
+    border-radius: 1pc solid orangered;
+
+}
+
+.sec-navbar{
+    display: flex;
+    text-align: center;
+
+}
+
+.icon1{
+  margin: 25px 5px;
+  margin-left: 30px;
+  color: white;
+  font-size: x-large;
+}
+
+.icon2{
+  margin: 25px 5px;
+  color: white;
+  font-size: x-large;
+}
+
+.title{
+  margin: 25px 5px;
+  color: white;
+  font-size: x-large;
+}
+
+.meal-detailes{
+  width: 1400px;
+  margin: 40px auto;
+  background-color: rgb(224, 222, 222);
+  border: 5px solid whitesmoke;
+
+}
+
+
+.detailes-title{
+  margin-left: 135px;
+  font-size: 14px;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.detailes-title::after{
+  content: '';
+  position: absolute;
+  width: 83px;
+  height: 4px;  
+  background-color: orangered;
+}
+
+.detailes-card{
+  display: flex;
+  gap: 70px;
+  background-color: white;
+}
+
+
+.meal-cato{
+  margin-top: 40px;
+  display: flex;
+  gap: 10px;
+}
+
+.detailes-card h1{
+  margin-top: 90px;
+  color: orangered;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.detailes-card h1::after{
+  margin-top: 40px;
+  content: '';
+  position: absolute;
+  right: 1px;
+  left:1px;
+  width: 630px;
+  height: 2px;  
+  background-color: orangered;
+}
+
+.meal-cato p{
+  margin-top:1px ;
+  font-size: 23px;
+  color: gray;
+}
+
+.source{
+  display: flex;
+  margin-top: 5px;
+  gap: 10px;
+}
+
+.source p{
+  margin-top: 1px;
+  font-size: 23px;
+  color: gray;
+}
+
+.tags{
+  display: flex;
+  margin: 0px 0px;
+  gap: 0px;
+  margin-top: 40px;
+}
+
+.tags ul{
+  margin-right: 50px;
+  list-style: none;
+  display: flex;
+  margin-top: 1px;
+  width:5px;
+  gap: 7px;
+  
+}
+
+.spicy,.bun,.calorific{
+  padding: 5px 5px;
+  color: rgb(246, 72, 14);
+  border-radius: 2px;
+  border: 1px solid orangered;
+}
