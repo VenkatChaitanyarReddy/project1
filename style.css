@@ -56,16 +56,17 @@
 
 .search{
      border-radius: 30px;
-     border: 1px solid white;
+     border: 2px solid white;
      width: 300px;
      padding: 8px;
      font-size: 16px;
 }
 .searchcon i{
   background-color: #e25522;
-  border-radius: 60px;        
+  border-radius: 70px;        
   padding: 15px;
   transition: all 0.3s ease;
+  border: 1px solid white;
 }
 
 .searchcon i:hover{
@@ -153,10 +154,7 @@
   border-radius: 6px;
 }
 
-.vegetarian{
-  
-  text-decoration: none;
-}
+
 
 /* Categories Ends */
 
@@ -233,3 +231,5 @@
   object-fit: cover;
   border: 5px solid white;
 }
+
+/* vegetarian css Ends */
