@@ -37,7 +37,7 @@
 
 /* Container1 starts */
 .container1{
-    height: 350px;
+    height: 320px;
     text-align: center;
     justify-content: center;
     display: flex;
@@ -47,10 +47,11 @@
     background-position: center;
 }
 .searchcon{
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
 }
 
 .search{
@@ -63,7 +64,7 @@
 .searchcon i{
   background-color: #e25522;
   border-radius: 60px;        
-  padding: 20px;
+  padding: 15px;
   transition: all 0.3s ease;
 }
 
@@ -75,13 +76,14 @@
 }
 
 .container1 span{
-    margin: 5px 0px;
+    margin: 15px 0px;
     color: white;
     display: block;
 }
 
 .question{
     font-size: xx-large;
+    letter-spacing: 3px;
 }
 
 /* Container1 Ends */
@@ -89,14 +91,11 @@
 /* Categories starts */
 
 .Categories {
-  margin: 30px 120px;
+  margin: 30px 100px;
 }
 
 .categories-title{
-  font-weight: bold;
   font-size: 14px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
   display: inline-block;
   position: relative;
   padding-bottom: 5px;
@@ -105,9 +104,7 @@
 .categories-title::after{
   content: '';
   position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 95px;
+  width: 86px;
   height: 4px;  
   background-color: orangered;
 }
@@ -115,7 +112,7 @@
 .post-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 10px;
   margin: 10px 10px;
   background-color: white;
 }
@@ -124,7 +121,6 @@
   background-color: white;
   width: 16vw;
   width: calc((100% - 80px) / 5);
-  padding: 5px;
   text-align: center;
   border-radius: 5px;
   position: relative;
@@ -140,15 +136,15 @@
 
 .post-card img {
   height: 180px;
-  width: 100%;
-  border-radius: 10px;
+  width: 96%;
+  border-radius: 5px;
   object-fit: cover;
   border: 5px solid white;
 }
 
 .post-card span {
   position: absolute;
-  top: 15px;
+  top: 6px;
   right: 6px;
   background-color: rgba(239, 84, 6, 0.85);
   color: rgb(241, 240, 239);
@@ -157,4 +153,37 @@
   border-radius: 6px;
 }
 
+.vegetarian{
+  
+  text-decoration: none;
+}
+
 /* Categories Ends */
+
+
+/* vegetarian css */
+
+.information{
+  width: 1200px;
+  height: 270px;
+  margin: 20px auto;
+  border: 1px solid orangered;
+  border-radius: 1px;
+  background-color: whitesmoke;
+}
+
+.information h2{
+  font-family: 'Roboto', sans-serif;
+  margin-left: 90px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: orangered;
+  letter-spacing: 1px;
+}
+
+.information pre{
+   font-family: 'Roboto', sans-serif;
+   line-height: 1.7;
+   font-size: 16px;
+   margin-right: 100px;
+}
