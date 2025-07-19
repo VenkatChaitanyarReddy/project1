@@ -6,11 +6,6 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
-
-.body{
-  background-color: whitesmoke;
-}
-
 /* Navbar Starts */
 .nav{
     background:rgb(226, 85, 34);
@@ -126,7 +121,7 @@
 }
 
 .post-card {
-  background-color: white;
+  background-color: whitesmoke;
   width: 320px;
   width: calc((100% - 80px) / 5);
   text-align: center;
@@ -142,10 +137,7 @@
 
 .post-card img {
   height: 180px;
-  width: 96%;
-  border-radius: 5px;
-  object-fit: cover;
-  border: 5px solid white;
+  width: 100%;
 }
 
 .post-card span {
@@ -215,26 +207,22 @@
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  margin: 10px 10px;
-  background-color: white;
+  margin: 10px auto;
+  background-color: whitesmoke;
 }
 
 .meal-card{
   background-color: white;
-  width: 16vw;
   width: calc((100% - 80px) / 5);
   text-align: center;
   border-radius: 5px;
   position: relative;
-  border: 1.5PX solid whitesmoke;
+  border: 1.5PX solid rgb(234, 228, 228);
 }
 
 .meal-card img{
-  height: 180px;
-  width: 96%;
-  border-radius: 5px;
-  object-fit: cover;
-  border: 5px solid white;
+  height: 170px;
+  width: 100%;
 }
 
 .bain-anchor{
@@ -285,7 +273,6 @@
   width: 100%;
   max-width: 1400px;
   margin: 40px auto;
-  background-color: rgb(224, 222, 222);
   border: 5px solid whitesmoke;
 
 }
@@ -320,8 +307,15 @@
   gap: 10px;
 }
 
+.detailes-card img{
+  height: 600px;
+  width: 500px;
+  margin: 50px 0;
+  margin-left: 50px;
+}
+
 .detailes-card h1{
-  margin-top: 90px;
+  margin-top: 70px;
   color: orangered;
   position: relative;
   display: inline-block;
@@ -329,12 +323,12 @@
 }
 
 .detailes-card h1::after{
-  margin-top: 40px;
+  margin-top: 60px;
   content: '';
   position: absolute;
   right: 1px;
   left:1px;
-  width: 620px;
+  width: 700px;
   height: 2px;  
   background-color: orangered;
 }
@@ -368,7 +362,6 @@
   margin-right: 50px;
   list-style: none;
   display: flex;
-  margin-top: 1px;
   width:5px;
   gap: 7px;
   
@@ -386,6 +379,85 @@
   max-width: 1400px;
   margin: 40px auto;
 }
+
+.ingredients-cont{
+  margin-top: 50px;
+  width: 700px;
+  background-color:orangered;
+  color: white;
+}
+
+.ingredients-cont h2{
+  padding:10px 20px;
+  margin-left: 20px;
+}
+
+.ingredients-cont ol{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 40px;
+}
+
+.ingredients-cont li{
+  display: flex;
+  align-items: center;
+  width: calc(33.33% - 40px);
+  font-size: 18px;
+  color: white;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.bottom{
+  margin-bottom: 20px;
+}
+
+.count{
+  background-color: #2bb3bd;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.measures-cont h2{
+  margin-left: 50px;
+
+}
+
+.measures{
+  width: 100%;
+  max-width: 1250px;
+  margin: 40px auto;
+  margin-left: 50px;
+  border: 2px solid whitesmoke;
+}
+.measures ul{
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 40px;
+
+}
+
+.measures li{
+  display: flex;
+  align-items: center;
+  width: calc(50% - 40px);
+  font-size: 18px;
+  color: rgb(20, 20, 20);
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.measures i{
+  margin-right: 10px;
+}
+
+
 
 
 /* ---------- MEDIA QUERIES ---------- */
