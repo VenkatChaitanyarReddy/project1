@@ -2,6 +2,11 @@
     margin: 0px;
     border: 0px;
 }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 .body{
   background-color: whitesmoke;
 }
@@ -122,7 +127,7 @@
 
 .post-card {
   background-color: white;
-  width: 16vw;
+  width: 320px;
   width: calc((100% - 80px) / 5);
   text-align: center;
   border-radius: 5px;
@@ -131,10 +136,8 @@
 }
 
 .post-card:hover{
-
-  transition: all 2s;
-  scale: 0.7;
-
+  transition: transform 1s ease;
+  transform: scale(0.7);
 }
 
 .post-card img {
@@ -246,9 +249,10 @@
 .sec-nav{
     margin: 40px auto;
     background:rgb(226, 85, 34);
-    width: 1400px;
+    width: 100%;
+    max-width: 1400px;
     height: 8vh;;
-    border-radius: 1pc solid orangered;
+    border-radius: 1px solid orangered;
 
 }
 
@@ -278,7 +282,8 @@
 }
 
 .meal-detailes{
-  width: 1400px;
+  width: 100%;
+  max-width: 1400px;
   margin: 40px auto;
   background-color: rgb(224, 222, 222);
   border: 5px solid whitesmoke;
@@ -287,7 +292,7 @@
 
 
 .detailes-title{
-  margin-left: 135px;
+  margin-left: 140px;
   font-size: 14px;
   display: inline-block;
   position: relative;
@@ -329,7 +334,7 @@
   position: absolute;
   right: 1px;
   left:1px;
-  width: 630px;
+  width: 620px;
   height: 2px;  
   background-color: orangered;
 }
@@ -374,4 +379,90 @@
   color: rgb(246, 72, 14);
   border-radius: 2px;
   border: 1px solid orangered;
+}
+
+.sec-nav, .meal-detailes {
+  width: 100%;
+  max-width: 1400px;
+  margin: 40px auto;
+}
+
+
+/* ---------- MEDIA QUERIES ---------- */
+@media (max-width: 768px) {
+  .navbar, .sec-navbar, .detailes-card, .meal-cato, .source, .tags ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bar {
+    margin: auto;
+    gap: 20px;
+  }
+
+  .img-logo {
+    margin-left: 20px;
+  }
+
+  .container1 {
+    padding: 20px;
+  }
+
+  .post-card, .meal-card {
+    width: calc((100% - 20px) / 2);
+  }
+
+  .Categories, .meals {
+    margin: 20px;
+  }
+
+  .information {
+    margin: 20px;
+    height: auto;
+  }
+
+  .sec-nav, .meal-detailes {
+    width: 100%;
+  }
+
+  .detailes-card h1::after {
+    width: 100%;
+  }
+
+  .tags ul {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .post-card, .meal-card {
+    width: 100%;
+  }
+
+  .logo, .icon1, .icon2, .title {
+    font-size: medium;
+  }
+
+  .search {
+    width: 90%;
+  }
+
+  .searchcon {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .detailes-card {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .detailes-card h1::after {
+    width: 100%;
+  }
+
+  .meal-cato, .source, .tags ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
